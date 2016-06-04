@@ -1,0 +1,7 @@
+[package]
+name = "concord"
+version = "0.1.0"
+authors = ["Matt Hartzler <matt@cryptopanic.org>"]
+
+[dependencies]
+protobuf = "1.0.21"

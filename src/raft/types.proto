@@ -1,0 +1,23 @@
+message RequestVote {
+  required int32 vote = 1;
+}
+
+message AppendEntry {
+  message Entry {
+    required bytes hash = 1;
+    required bytes bytes = 2;
+  }
+  repeated Entry entries = 1;
+}
+
+message Snapshot {
+  optional bytes bytes = 1;
+}
+
+message RaftRPC {
+  oneof msg {
+    RequestVote request_vote = 1;
+    AppendEntry append_entry = 2;
+    Snapshot snapshot = 3;
+  }
+}

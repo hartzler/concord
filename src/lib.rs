@@ -1,4 +1,5 @@
 extern crate protobuf;
+extern crate rand;
 pub mod raft;
 pub mod server;
 

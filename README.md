@@ -1,4 +1,10 @@
-## Development
+A rust based raft experiment.
+
+## Run
+`cargo run --example hello`
+
+## Dev
+To hack on concord:
 
 ### Protobuf
 Concord uses protobuf for exchanging RPC messages.
